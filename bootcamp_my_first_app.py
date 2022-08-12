@@ -196,11 +196,11 @@ elif option == 'Use a password in your code':
      
      code = '''
           from getpass import getpass
-          password = getpass(“password: “)
-          if password == “abcd”:
-               print(“welcome strnger!”)
-          else:
-               print(“wrong password”)
+password = getpass(“password: “)
+if password == “abcd”:
+    print(“welcome strnger!”)
+else:
+    print(“wrong password”)
      '''
 
      st.code(code, language='python')
@@ -209,9 +209,9 @@ elif option == 'Use a password in your code':
 
      output = '''
           password: **** [abcd]
-          Welcome stranger!
-          Password: **** [abdc]
-          Wrong password
+Welcome stranger!
+Password: **** [abdc]
+Wrong password
      '''
 
      st.code(output, language='python')

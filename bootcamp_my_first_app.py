@@ -13,8 +13,8 @@ if option == 'Walrus operator':
      
      code = '''
           Mylist = [1,2,3]
-          if(l := len(mylist) > 2)
-          print(l)
+if(l := len(mylist) > 2)
+print(l)
      '''
 
      st.code(code, language='python')
@@ -29,7 +29,7 @@ elif option == 'Splitting a string':
      
      code = '''
           string = “hello world”
-          string.split()
+string.split()
      '''
 
      st.code(code, language='python')
@@ -48,8 +48,8 @@ elif option == 'Reversing a string':
      
      code = '''
           str=”hello world!”
-          a=str[::-1]
-          print(a)
+a=str[::-1]
+print(a)
      '''
 
      st.code(code, language='python')
@@ -68,9 +68,9 @@ elif option == 'Merging two dictionaries':
      
      code = '''
           d1 = {“a”: 10, “b”:20}
-          d2 = {“c”: 30, “d”:40}
-          d3 = {**d1, **d2}
-          print(d3)
+d2 = {“c”: 30, “d”:40}
+d3 = {**d1, **d2}
+print(d3)
      '''
 
      st.code(code, language='python')
@@ -89,9 +89,9 @@ elif option == 'The zip() function':
      
      code = '''
           colour = [“red”, “yellow”, “green”]
-          fruits = [‘apple’, ‘banana’, ‘mango’]
-          for colour, fruits in zip(colour, fruits):
-               print(colour, fruits)
+fruits = [‘apple’, ‘banana’, ‘mango’]
+for colour, fruits in zip(colour, fruits):
+print(colour, fruits)
      '''
 
      st.code(code, language='python')
@@ -100,8 +100,8 @@ elif option == 'The zip() function':
 
      output = '''
           red apple
-          yellow banana
-          green mango
+yellow banana
+green mango
      '''
 
      st.code(output, language='python')
@@ -112,9 +112,9 @@ elif option == 'Assigning multiple list values to a variable':
      
      code = '''
           mylist = [1,2,3,4,5]
-          a,*b = mylist
-          print(f”a =”,a)
-          print(f”b =”,b)
+a,*b = mylist
+print(f”a =”,a)
+print(f”b =”,b)
      '''
 
      st.code(code, language='python')
@@ -123,7 +123,7 @@ elif option == 'Assigning multiple list values to a variable':
 
      output = '''
           a = 1
-          b = [2, 3, 4, 5]
+b = [2, 3, 4, 5]
      '''
 
      st.code(output, language='python')
@@ -134,8 +134,8 @@ elif option == 'Remove duplicate list items':
      
      code = '''
           mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9]
-          newlist = set(mylist)
-          print(newlist)
+newlist = set(mylist)
+print(newlist)
      '''
 
      st.code(code, language='python')
@@ -154,7 +154,7 @@ elif option == 'Lambda function':
      
      code = '''
           mul = lambda a,b: a*b
-          mul(5,6)
+mul(5,6)
      '''
 
      st.code(code, language='python')
@@ -173,10 +173,10 @@ elif option == 'Swapping variable value':
      
      code = '''
           a = 100
-          b = 200
-          a,b = b,a
-          print(f’a = ‘,a)
-          print(f’b = ‘,b)
+b = 200
+a,b = b,a
+print(f’a = ‘,a)
+print(f’b = ‘,b)
      '''
 
      st.code(code, language='python')
@@ -185,7 +185,7 @@ elif option == 'Swapping variable value':
 
      output = '''
           a = 200
-          b = 100
+b = 100
      '''
 
      st.code(output, language='python')

@@ -22,3 +22,22 @@ if option == 'Walrus operator':
      st.header('Output')
 
      st.code('3', language='python')
+
+elif option == 'Splitting a string':
+     st.write('If you want to split the components of a string into a list you can do that easily using the split() function in python. This will make the string operations a lot easier!')
+     st.header('Example')
+     
+     code = '''
+          string = “hello world”
+          string.split()
+     '''
+
+     st.code(code, language='python')
+     
+     st.header('Output')
+
+     output = '''
+          [‘hello’, ‘world’]
+     '''
+
+     st.code(output, language='python')
